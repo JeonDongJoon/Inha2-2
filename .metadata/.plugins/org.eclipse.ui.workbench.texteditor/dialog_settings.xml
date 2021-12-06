@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
+		<item value="false" key="isRegEx"/>
+		<item value="전문가 Expert 사이트" key="selection"/>
+		<item value="false" key="casesensitive"/>
+		<item value="false" key="incremental"/>
+		<item value="true" key="wrap"/>
+		<item value="false" key="wholeword"/>
+		<list key="findhistory">
+			<item value="강의평가 웹 사이트"/>
+			<item value="강의평가"/>
+			<item value="강의"/>
+			<item value="강의 "/>
+			<item value="강의 평가"/>
+			<item value="bbs"/>
+			<item value="view"/>
+			<item value="name"/>
+			<item value="expert"/>
+			<item value="BBS"/>
+			<item value="Bbs"/>
+			<item value="user"/>
+			<item value="userID"/>
+			<item value="Sem"/>
+			<item value="sem"/>
+		</list>
+		<list key="replacehistory">
+			<item value="전문가 Expert 사이트"/>
+			<item value="상담사이트"/>
+			<item value=""/>
+			<item value="profile"/>
+			<item value="review"/>
+		</list>
+	</section>
+	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
+		<item value="288" key="DIALOG_WIDTH"/>
+		<item value="1|맑은 고딕|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|0|0|맑은 고딕" key="DIALOG_FONT_NAME"/>
+		<item value="362" key="DIALOG_HEIGHT"/>
+		<item value="8" key="DIALOG_X_ORIGIN"/>
+		<item value="321" key="DIALOG_Y_ORIGIN"/>
+	</section>
+</section>

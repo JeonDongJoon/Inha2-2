@@ -1,0 +1,38 @@
+package jobType;
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.ResultSet;
+
+public class JobTypeDAO {
+	
+	
+	private Connection conn;
+
+	private ResultSet rs;
+
+
+
+	public JobTypeDAO() {
+
+		try {
+
+			String dbURL = "jdbc:mysql://localhost:3306/expertChat";
+
+			String dbID = "root";
+
+			String dbPassword = "wjs0912";
+
+			Class.forName("com.mysql.jdbc.Driver");
+
+			conn = DriverManager.getConnection(dbURL, dbID, dbPassword);
+
+		} catch (Exception e) {
+
+			e.printStackTrace();
+
+		}
+
+	}
+
+}

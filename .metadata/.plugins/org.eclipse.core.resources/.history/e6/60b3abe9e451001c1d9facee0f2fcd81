@@ -1,0 +1,54 @@
+package expert;
+
+public class ExpertDTO {
+	private int expertID;
+	private String expertTitle;
+	private String userID;
+	private String expertContent;
+	private int expertAvailable;
+	private String expertPrice;
+	private String jobType;
+	public int getExpertID() {
+		return expertID;
+	}
+	public void setExpertID(int expertID) {
+		this.expertID = expertID;
+	}
+	public String getExpertTitle() {
+		return expertTitle;
+	}
+	public void setExpertTitle(String expertTitle) {
+		this.expertTitle = expertTitle;
+	}
+	public String getUserID() {
+		return userID;
+	}
+	public void setUserID(String userID) {
+		this.userID = userID;
+	}
+	public String getExpertContent() {
+		return expertContent;
+	}
+	public void setExpertContent(String expertContent) {
+		this.expertContent = expertContent;
+	}
+	public int getExpertAvailable() {
+		return expertAvailable;
+	}
+	public void setExpertAvailable(int expertAvailable) {
+		this.expertAvailable = expertAvailable;
+	}
+	public String getExpertPrice() {
+		return expertPrice;
+	}
+	public void setExpertPrice(String expertPrice) {
+		this.expertPrice = expertPrice;
+	}
+	public String getJobType() {
+		return jobType;
+	}
+	public void setJobType(String jobType) {
+		this.jobType = jobType;
+	}
+
+}

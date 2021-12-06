@@ -1,0 +1,12 @@
+package expert;
+
+public class ExpertDTO {
+	private int expertID;
+	private String expertTitle;
+	private String userID;
+	private String expertContent;
+	private int expertAvailable;
+	private String expertPrice;
+	private String jobType;
+
+}

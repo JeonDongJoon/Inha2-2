@@ -1,0 +1,47 @@
+package profile;
+
+public class profile {
+	private int profileID;
+	private String profileTitle;
+	private String userID;
+	private String profileDate;
+	private String profileContent;
+	private int profileAvailable;
+	public int getprofileID() {
+		return profileID;
+	}
+	public void setprofileID(int profileID) {
+		this.profileID = profileID;
+	}
+	public String getprofileTitle() {
+		return profileTitle;
+	}
+	public void setprofileTitle(String profileTitle) {
+		this.profileTitle = profileTitle;
+	}
+	public String getUserID() {
+		return userID;
+	}
+	public void setUserID(String userID) {
+		this.userID = userID;
+	}
+	public String getprofileDate() {
+		return profileDate;
+	}
+	public void setprofileDate(String profileDate) {
+		this.profileDate = profileDate;
+	}
+	public String getprofileContent() {
+		return profileContent;
+	}
+	public void setprofileContent(String profileContent) {
+		this.profileContent = profileContent;
+	}
+	public int getprofileAvailable() {
+		return profileAvailable;
+	}
+	public void setprofileAvailable(int profileAvailable) {
+		this.profileAvailable = profileAvailable;
+	}
+
+}

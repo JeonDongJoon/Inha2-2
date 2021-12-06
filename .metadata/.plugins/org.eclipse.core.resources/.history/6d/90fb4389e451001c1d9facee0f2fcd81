@@ -1,0 +1,72 @@
+package expert;
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.util.ArrayList;
+
+public class ExpertDAO {
+	
+	
+	private Connection conn;
+
+	private ResultSet rs;
+
+
+
+	public ExpertDAO() {
+
+		try {
+
+			String dbURL = "jdbc:mysql://localhost:3306/expertchat";
+
+			String dbID = "root";
+
+			String dbPassword = "wjs0912";
+
+			Class.forName("com.mysql.jdbc.Driver");
+
+			conn = DriverManager.getConnection(dbURL, dbID, dbPassword);
+
+		} catch (Exception e) {
+
+			e.printStackTrace();
+
+		}
+
+	}
+	
+	//게시글 번호 부여 메소드
+		public int getNext() {
+			//현재 게시글을 내림차순으로 조회하여 가장 마지막 글의 번호를 구한다
+			String sql = "select expertID from expert order by expertID desc";
+			try {
+				PreparedStatement pstmt = conn.prepareStatement(sql);
+				rs = pstmt.executeQuery();
+				if(rs.next()) {
+					return rs.getInt(1) + 1;
+				}
+				return 1; //첫 번째 게시물인 경우
+			}catch (Exception e) {
+				e.printStackTrace();
+			}
+			return -1; //데이터베이스 오류
+		}
+		
+		public int write(String expertTitle, String userID, String expertContent) {
+			String SQL = "INSERT INTO BBS VALUES(?, ?, ?, ?, ?, ?)";
+			try {
+				PreparedStatement pstmt = conn.prepareStatement(SQL);
+				pstmt.setInt(1, getNext());
+				pstmt.setString(2, expertTitle);
+				pstmt.setString(3, userID);
+				pstmt.setString(5, bbsContent);
+				pstmt.setInt(6, 1);
+				return pstmt.executeUpdate();
+			}catch(Exception e) {
+				e.printStackTrace();
+			}
+			return -1; 
+		
+}

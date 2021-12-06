@@ -1,0 +1,5 @@
+package jobType;
+
+public class JobTypeDAO {
+
+}

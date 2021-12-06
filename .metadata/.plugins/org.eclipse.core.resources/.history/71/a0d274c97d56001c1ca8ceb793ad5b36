@@ -1,0 +1,10 @@
+package profile;
+
+public class Profile {
+	private int profileID;
+	private String profileTitle;
+	private String userID;
+	private String profileDate;
+	private String profileContent;
+	private int profileAvailable;
+}

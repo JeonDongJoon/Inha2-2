@@ -1,0 +1,12 @@
+package porfile;
+
+public class ProfileDTO {
+	private int profileID;
+	private String profileTitle;
+	private String userID;
+	private String profileContent;
+	private int profileAvailable;
+	private String profilePrice;
+	private String userName;
+
+}
